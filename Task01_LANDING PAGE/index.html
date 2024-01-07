@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Z-Studio</h1>
+        <p>Welcome to our awesome landing page!</p>
+    </header>
+
+    <section>
+        <h2>Discover Amazing Features</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo sit amet velit eleifend euismod.</p>
+        <a href="#"><button onclick="redirectToFeatures()">Learn More</button></a>
+    </section>
+
+    <section>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest news and announcements.</p>
+        <form id="subscribeForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <script>
+        function redirectToFeatures() {
+            // Add your redirection logic here
+            alert("Redirecting to features page");
+        }
+
+        document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Subscribed successfully!");
+        });
+    </script>
+</body>
+
+</html>
